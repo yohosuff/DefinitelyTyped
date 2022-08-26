@@ -150,6 +150,7 @@ declare namespace anime {
     const speed: number;
     const running: AnimeInstance[];
     const easings: { [EasingFunction: string]: (t: number) => any };
+    const suspendWhenDocumentHidden: boolean;
     function remove(targets: AnimeTarget | ReadonlyArray<AnimeTarget>): void;
     function get(targets: AnimeTarget, prop: string): string | number;
     function path(path: string | HTMLElement | SVGElement | null, percent?: number): (prop: string) => {
